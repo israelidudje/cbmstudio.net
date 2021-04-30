@@ -10,7 +10,7 @@
     $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     
-    $message=" "
+    $message=" ";
     $message.='A NEW MESSAGE FROM '.$_POST['name'].' via '.$_POST['email'].'<br />';    
     $message.=$_POST['message'];
     if (@mail($to, $email, $message, $headers))
